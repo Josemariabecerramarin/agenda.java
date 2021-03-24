@@ -1,0 +1,54 @@
+******************
+*     AGENDA     *
+******************
+
+1. Añadir contacto
+2. Lista de contactos
+3. Salir
+
+
+
+------------------------------------------------1
+*******************
+* Añadir contacto *
+*******************
+
+Nombre:
+Apellido:
+Telefono:
+Correo:
+.
+
+Contacto guardado!
+(sleep 1)
+
+
+--------------------------------------------------2
+**********************
+* Lista de contactos *
+**********************
+
+1. Buscar un contacto
+2. Eliminar un contacto
+
+
+
+-------------------------------------------------buscar un contacto
+**********************
+* Buscar un contacto *
+**********************
+
+Escribe su nombre aqui:
+
+
+
+-------------------------------------------------eliminar contacto
+*********************
+* Eliminar contacto *
+*********************
+
+Escribe su nombre aqui:
+
+
+Contacto eliminado!
+(sleep 1)
