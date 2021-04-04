@@ -1,12 +1,12 @@
 package com.company;
 
-public class BusquedaContacto {
-    String buscar(String busqueda) {
-        return buscar(busqueda, false);
+public class CampodeTexto {
+    String pedir(String pregunta) {
+        return pedir(pregunta, false);
     }
 
-    String buscar(String busqueda, boolean obligatorio) {
-        System.out.println("busqueda");
+    String pedir(String pregunta, boolean obligatorio) {
+        System.out.println("\033[36m" + pregunta + ":\033[0m");
         if (!obligatorio) {
             return Main.scanner.nextLine();
         } else {
@@ -17,7 +17,7 @@ public class BusquedaContacto {
                     return contacto;
                 } else {
                     Mensaje mensaje = new Mensaje();
-                    mensaje.mostrarError("Introduce un nombre");
+                    mensaje.mostrarWarn("Introduce el valor");
                 }
             }
         }

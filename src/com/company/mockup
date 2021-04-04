@@ -29,7 +29,7 @@ Contacto guardado!
 **********************
 
 1. Buscar un contacto
-2. Eliminar un contacto
+2. Salir
 
 
 
@@ -40,15 +40,7 @@ Contacto guardado!
 
 Escribe su nombre aqui:
 
+1. Eliminar contacto
+2. Salir
 
-
--------------------------------------------------eliminar contacto
-*********************
-* Eliminar contacto *
-*********************
-
-Escribe su nombre aqui:
-
-
-Contacto eliminado!
 (sleep 1)

@@ -6,19 +6,22 @@ public class AñadirContacto {
         titulo.mostrar("AÑADIR CONTACTO");     // titulo = "AÑADIR CONTACTO"
 
         Contacto contacto = new Contacto();
+        CampodeTexto campodeTexto = new CampodeTexto();
 
-        System.out.println("Nombre:");
-        contacto.nombre = Main.scanner.nextLine();
+        contacto.nombre = campodeTexto.pedir("Nombre", true);
 
-        System.out.println("Apellido:");
-        contacto.apellido = Main.scanner.nextLine();
+        contacto.apellido = campodeTexto.pedir("Apellido (Opcional)", false);
 
-        System.out.println("Telefono:");
-        contacto.telefono = Main.scanner.nextLine();
+        contacto.telefono = campodeTexto.pedir("Telefono", true);
 
-        System.out.println("Email:");
-        contacto.email = Main.scanner.nextLine();
+        contacto.otrotelefono = campodeTexto.pedir("Telefono trabajo (Opcional)", false);
+
+        contacto.email = campodeTexto.pedir("Email (Opcional)", false);
+
+        contacto.direccion = campodeTexto.pedir("Direccion (Opcional)", false);
 
         Main.agendadeContactos.contactos.add(contacto);
+        Mensaje mensaje = new Mensaje();
+        mensaje.mostrarInfo("Contacto Guardado!");
     }
 }
